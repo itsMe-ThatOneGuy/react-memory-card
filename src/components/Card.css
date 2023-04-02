@@ -1,0 +1,13 @@
+.card {
+	width: 280px;
+	height: 350px;
+	overflow: hidden;
+	background-color: #8ab661;
+	border-radius: 15px;
+	font-size: 23px;
+	font-family: "Galada";
+	margin: 10px;
+	background-size: cover;
+	box-shadow: 0 8px 8px -4px lightblue;
+	background: #eee;
+}

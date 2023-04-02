@@ -1,4 +1,5 @@
 import React from "react";
+import "./Card.css";
 
 class Cards extends React.Component {
 	constructor() {
