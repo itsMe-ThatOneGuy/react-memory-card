@@ -8,14 +8,25 @@ class Gameboard extends React.Component {
 		super(props);
 
 		this.state = {
-			cardList: [],
+			cardList: cardList,
+			shouldShuffle: false,
 		};
+
+		this.shuffleCards = this.shuffleCards.bind(this);
+	}
+
+	shuffleCards() {
+		const shuffled = this.state.cardList
+			.map((value) => ({ value, sort: Math.random() }))
+			.sort((a, b) => a.sort - b.sort)
+			.map(({ value }) => value);
+		this.setState({
+			cardList: shuffled,
+		});
 	}
 
 	componentDidMount() {
-		this.setState({
-			cardList: cardList,
-		});
+		this.shuffleCards();
 	}
 
 	render() {
