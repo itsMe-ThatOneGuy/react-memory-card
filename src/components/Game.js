@@ -20,7 +20,6 @@ const Game = () => {
 
 	return (
 		<div>
-			<button onClick={clearScore}>test</button>
 			<Scoreboard score={score} highScore={highScore} />
 			<Gameboard updateScores={updateScores} clearScore={clearScore} />
 		</div>
