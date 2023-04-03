@@ -1,26 +1,20 @@
 import React from "react";
 import "./Gameboard.css";
 import Card from "./Card";
-import cardList from "./cardData";
+import cards from "./cardData";
 
 class Gameboard extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			cardList: cardList,
-			shouldShuffle: true,
+			cardList: cards,
 		};
 
 		this.shuffleCards = this.shuffleCards.bind(this);
-		this.selectCard = this.selectCard.bind(this);
-		this.test = this.test.bind(this);
+		this.gameLoop = this.gameLoop.bind(this);
 	}
 
-	createCardList() {
-		const newList = [...this.state.cardList];
-	}
-
-	getSelectedCard(e) {
+	getSelectedCardIndex(e) {
 		const selectCard = e.target.id;
 		const cardIndex = this.state.cardList.findIndex(
 			(card) => selectCard === `Image${card.id}`
@@ -28,12 +22,11 @@ class Gameboard extends React.Component {
 		return cardIndex;
 	}
 
-	selectCard(e) {
+	updateCardClick(card) {
 		const newList = [...this.state.cardList];
-		newList[this.getSelectedCard(e)].cliked = true;
+		newList[card].clicked = true;
 		this.setState({
 			cardList: newList,
-			shouldShuffle: true,
 		});
 	}
 
@@ -41,13 +34,33 @@ class Gameboard extends React.Component {
 		const shuffled = [...this.state.cardList].sort(() => Math.random() - 0.5);
 		this.setState({
 			cardList: shuffled,
-			shouldShuffle: false,
 		});
-		console.log(shuffled);
 	}
 
-	test() {
-		this.shuffleCards();
+	resetCards() {
+		let allCards = [...this.state.cardList];
+		for (let index = 0; index < allCards.length; index++) {
+			const element = allCards[index];
+			element.clicked = false;
+		}
+		this.setState({
+			cardList: allCards,
+		});
+	}
+
+	gameLoop(e) {
+		const currentCardList = this.state.cardList;
+		const selectedCard = this.getSelectedCardIndex(e);
+		console.log(currentCardList[selectedCard].clicked);
+		if (currentCardList[selectedCard].clicked === false) {
+			this.updateCardClick(selectedCard);
+			this.props.updateScores();
+			this.shuffleCards();
+		} else {
+			this.resetCards();
+			this.props.clearScore();
+			this.shuffleCards();
+		}
 	}
 
 	componentDidMount() {
@@ -57,9 +70,8 @@ class Gameboard extends React.Component {
 	render() {
 		return (
 			<div className="gameboard">
-				<button onClick={this.test}>Test</button>
 				{this.state.cardList.map((e) => {
-					return <Card key={e.id} info={e} selectCard={this.selectCard} />;
+					return <Card key={e.id} info={e} selectCard={this.gameLoop} />;
 				})}
 			</div>
 		);
