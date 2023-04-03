@@ -1,21 +1,18 @@
 import React from "react";
 import "./Card.css";
 
-class Cards extends React.Component {
-	constructor() {
-		super();
-		this.state = {
-			clicked: false,
-		};
-	}
-
+class Card extends React.Component {
 	render() {
 		return (
-			<div className="card">
-				<img src={this.props.info.img} alt={"Image" + this.props.info.id} />
+			<div className="card" onClick={this.props.selectCard}>
+				<img
+					src={this.props.info.img}
+					alt={"Image" + this.props.info.id}
+					id={"Image" + this.props.info.id}
+				/>
 			</div>
 		);
 	}
 }
 
-export default Cards;
+export default Card;
