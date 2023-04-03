@@ -1,26 +1,28 @@
-//game would handel the game logic and pass state to scoreboard and gameboard
 import { useState } from "react";
 import Scoreboard from "./Scoreboard";
 import Gameboard from "./Gameboard";
 
 const Game = () => {
 	const [score, setScore] = useState(0);
-	const [bestScore, setBestScore] = useState(0);
+	const [highScore, setHighScore] = useState(0);
 
-	const updateScore = () => {
-		setScore((prevScore) => prevScore + 1);
+	const updateScores = () => {
+		const newScore = score + 1;
+		setScore(() => newScore);
+		if (newScore >= highScore) {
+			setHighScore(() => newScore);
+		}
 	};
 
-	const updateHighScore = () => {
-		if (score > bestScore) {
-			setBestScore(score);
-		}
+	const clearScore = () => {
+		setScore(0);
 	};
 
 	return (
 		<div>
-			<Scoreboard score={score} bestScore={bestScore} />
-			<Gameboard />
+			<button onClick={clearScore}>test</button>
+			<Scoreboard score={score} highScore={highScore} />
+			<Gameboard updateScores={updateScores} clearScore={clearScore} />
 		</div>
 	);
 };
