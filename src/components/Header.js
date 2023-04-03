@@ -7,6 +7,9 @@ const Header = () => {
 		<header className="header">
 			<img src={bobobo} alt="BoBoBo logo" />
 			<h2>The Many Faces of Don Patch Memory Card Game</h2>
+			<p>
+				Score points by clicking an image. Try to only click each image once!
+			</p>
 		</header>
 	);
 };
