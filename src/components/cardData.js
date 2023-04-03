@@ -11,67 +11,67 @@ import donpatch9 from "../img/donpatch9.jpeg";
 import donpatch10 from "../img/donpatch10.jpeg";
 import donpatch11 from "../img/donpatch11.jpeg";
 
-const cardList = [
+const cards = [
 	{
 		id: 0,
 		img: donpatch0,
-		cliked: false,
+		clicked: false,
 	},
 	{
 		id: 1,
 		img: donpatch1,
-		cliked: false,
+		clicked: false,
 	},
 	{
 		id: 2,
 		img: donpatch2,
-		cliked: false,
+		clicked: false,
 	},
 	{
 		id: 3,
 		img: donpatch3,
-		cliked: false,
+		clicked: false,
 	},
 	{
 		id: 4,
 		img: donpatch4,
-		cliked: false,
+		clicked: false,
 	},
 	{
 		id: 5,
 		img: donpatch5,
-		cliked: false,
+		clicked: false,
 	},
 	{
 		id: 6,
 		img: donpatch6,
-		cliked: false,
+		clicked: false,
 	},
 	{
 		id: 7,
 		img: donpatch7,
-		cliked: false,
+		clicked: false,
 	},
 	{
 		id: 8,
 		img: donpatch8,
-		cliked: false,
+		clicked: false,
 	},
 	{
 		id: 9,
 		img: donpatch9,
-		cliked: false,
+		clicked: false,
 	},
 	{
 		id: 10,
 		img: donpatch10,
-		cliked: false,
+		clicked: false,
 	},
 	{
 		id: 11,
 		img: donpatch11,
-		cliked: false,
+		clicked: false,
 	},
 ];
 
-export default cardList;
+export default cards;
