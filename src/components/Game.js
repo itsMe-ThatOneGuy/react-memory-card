@@ -8,9 +8,9 @@ const Game = () => {
 
 	const updateScores = () => {
 		const newScore = score + 1;
-		setScore(() => newScore);
+		setScore(newScore);
 		if (newScore >= highScore) {
-			setHighScore(() => newScore);
+			setHighScore(newScore);
 		}
 	};
 
