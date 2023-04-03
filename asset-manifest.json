@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/react-memory-card/static/css/main.6f823d75.css",
+    "main.js": "/react-memory-card/static/js/main.3e568dc6.js",
+    "static/media/donpatch1.png": "/react-memory-card/static/media/donpatch1.208bc9dac56933a3b873.png",
+    "static/media/donpatch5.png": "/react-memory-card/static/media/donpatch5.16af04f61405f92217bf.png",
+    "static/media/BoBoBo-Bo_Bo-BoBo_logo.webp": "/react-memory-card/static/media/BoBoBo-Bo_Bo-BoBo_logo.5f47510b406df42d7f06.webp",
+    "static/media/donpatch8.jpg": "/react-memory-card/static/media/donpatch8.f34d50ea6f48b886ec31.jpg",
+    "static/media/donpatch3.jpg": "/react-memory-card/static/media/donpatch3.4b3d7b9b306baeeec7bc.jpg",
+    "static/media/donpatch7.jpg": "/react-memory-card/static/media/donpatch7.e0048b07cea293523010.jpg",
+    "static/media/donpatch9.jpeg": "/react-memory-card/static/media/donpatch9.70d0062cb7fb6afcb9ae.jpeg",
+    "static/media/donpatch6.jpg": "/react-memory-card/static/media/donpatch6.3ee87bc9d035b7424d2e.jpg",
+    "static/media/donpatch11.jpeg": "/react-memory-card/static/media/donpatch11.b8acddc558b4d9199ea8.jpeg",
+    "static/media/donpatch10.jpeg": "/react-memory-card/static/media/donpatch10.ac212084e16e2492e20c.jpeg",
+    "static/media/donpatch4.jpg": "/react-memory-card/static/media/donpatch4.1f43911441ac8e4e43f2.jpg",
+    "static/media/donpatch0.jpg": "/react-memory-card/static/media/donpatch0.092244cf4608cf20f15b.jpg",
+    "index.html": "/react-memory-card/index.html",
+    "main.6f823d75.css.map": "/react-memory-card/static/css/main.6f823d75.css.map",
+    "main.3e568dc6.js.map": "/react-memory-card/static/js/main.3e568dc6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6f823d75.css",
+    "static/js/main.3e568dc6.js"
+  ]
+}
