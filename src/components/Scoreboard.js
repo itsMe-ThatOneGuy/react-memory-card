@@ -2,22 +2,14 @@ import React from "react";
 import "./Scoreboard.css";
 
 class Scoreboard extends React.Component {
-	constructor() {
-		super();
-		this.state = {
-			score: 0,
-			bestScore: 0,
-		};
-	}
-
 	render() {
 		return (
 			<div className="scoreboard">
 				<div className="score" id="current-score">
-					<h3>{"Score: " + this.state.score}</h3>
+					<h3>{"Score: " + this.props.score}</h3>
 				</div>
 				<div className="score" id="best-score">
-					<h3>{"Best Score: " + this.state.bestScore}</h3>
+					<h3>{"High Score: " + this.props.highScore}</h3>
 				</div>
 			</div>
 		);
