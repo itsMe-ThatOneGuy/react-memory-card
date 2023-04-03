@@ -2,6 +2,8 @@
 
 I made this as part of The Odin Project [course](https://www.theodinproject.com/lessons/node-path-javascript-memory-card)
 
+## [Live Preview](https://github.com/itsMe-ThatOneGuy/react-memory-card)
+
 The goal of the game is to click as many of Don Patch's faces as you can without clicking the same one twice. Your increments by one each time you succeed at picking a card you haven't already clicked. If you click a card you had already clicked before, the score will go back to zero starting the game over.
 
 ## Getting Started
