@@ -15,50 +15,62 @@ const cardList = [
 	{
 		id: 0,
 		img: donpatch0,
+		cliked: false,
 	},
 	{
 		id: 1,
 		img: donpatch1,
+		cliked: false,
 	},
 	{
 		id: 2,
 		img: donpatch2,
+		cliked: false,
 	},
 	{
 		id: 3,
 		img: donpatch3,
+		cliked: false,
 	},
 	{
 		id: 4,
 		img: donpatch4,
+		cliked: false,
 	},
 	{
 		id: 5,
 		img: donpatch5,
+		cliked: false,
 	},
 	{
 		id: 6,
 		img: donpatch6,
+		cliked: false,
 	},
 	{
 		id: 7,
 		img: donpatch7,
+		cliked: false,
 	},
 	{
 		id: 8,
 		img: donpatch8,
+		cliked: false,
 	},
 	{
 		id: 9,
 		img: donpatch9,
+		cliked: false,
 	},
 	{
 		id: 10,
 		img: donpatch10,
+		cliked: false,
 	},
 	{
 		id: 11,
 		img: donpatch11,
+		cliked: false,
 	},
 ];
 
